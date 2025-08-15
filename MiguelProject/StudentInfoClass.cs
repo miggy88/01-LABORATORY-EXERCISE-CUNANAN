@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static MiguelProject.StudentInfoClass;
 
 namespace MiguelProject
 {
     class StudentInfoClass
     {
-        public delegate int DelegateNumber(long number);
-        public delegate void DelegateText(String txt);
-
+        public delegate int DelegateNumber();
+        public delegate string DelegateText();
 
         public static string FirstName = "";
         public static string LastName = "";
@@ -19,48 +19,45 @@ namespace MiguelProject
         public static string Program = "";
         public static long Age = 0;
         public static long ContactNumber = 0;
-        public static long  StudentNumber = 0;
+        public static long StudentNumber = 0;
 
-        public static string GetFirstName(string FirstName)
+        public static string GetFirstName(string firstName)
         {
-            return FirstName;
+            return firstName;
         }
-        public static string GetLastName(string LastName)
+        public static string GetLastName(string lastName)
         {
-            return LastName;
-        }
-
-        public static string GetMiddleName(string MiddleName)
-        {
-            return MiddleName;
+            return lastName;
         }
 
-        public static string GetAddress(string Address)
+        public static string GetMiddleName(string middleName)
         {
-            return Address;
+            return middleName;
         }
 
-        public static string GetProgram(string Program)
+        public static string GetAddress(string address)
         {
-            return Program;
+            return address;
         }
 
-        public static long GetAge(long Age)
+        public static string GetProgram(string program)
         {
-            return Age;
+            return program;
         }
 
-        public static long GetContactNumber(long ContactNumber)
+        public static long GetAge(long age)
         {
-            return ContactNumber;
-        }   
-
-        public static long GetStudentNumber(long StudentNumber)
-        {
-            return StudentNumber;
+            return age;
         }
 
+        public static long GetContactNumber(long contactNumber)
+        {
+            return contactNumber;
+        }
 
-
+        public static long GetStudentNumber(long studentNumber)
+        {
+            return studentNumber;
+        }
     }
 }

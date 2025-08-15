@@ -24,8 +24,12 @@ namespace MiguelProject
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+
+
+            
+
         {
-            //LastName
+            //LastName  
             StudentInfoClass.StudentNumber = Convert.ToInt64(studentNumbertxtbox.Text);
 
         }
@@ -47,29 +51,38 @@ namespace MiguelProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Button 
+            // Button   
+            StudentInfoClass.StudentNumber = Convert.ToInt64(studentNumbertxtbox.Text);
+            StudentInfoClass.FirstName = firstNametxtbox.Text;
+            StudentInfoClass.LastName = lastNametxtbox.Text;
+            StudentInfoClass.MiddleName = middleNametxtbox.Text;
+            StudentInfoClass.Address = addresstxtbox.Text;
+            StudentInfoClass.Program = programtxtbox.Text;
+            StudentInfoClass.Age = Convert.ToInt64(agetxtbox.Text);
+            StudentInfoClass.ContactNumber = Convert.ToInt64(contactNotxtbox.Text);
 
+            Form2 confirmForm = new Form2();
+            confirmForm.Show();
 
-           
         }
 
         private void lastNametxtbox_TextChanged(object sender, EventArgs e)
         {
-            //lastname
+            //lastname  
 
             StudentInfoClass.LastName = lastNametxtbox.Text;
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            //FirstName
+            //FirstName  
 
             StudentInfoClass.FirstName = firstNametxtbox.Text;
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            //MiddleName
+            //MiddleName  
             StudentInfoClass.MiddleName = middleNametxtbox.Text;
 
         }
@@ -81,31 +94,26 @@ namespace MiguelProject
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            //Program   
+            //Program     
             StudentInfoClass.Program = programtxtbox.Text;
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            //Age 
+            //Age   
 
             StudentInfoClass.Age = Convert.ToInt64(agetxtbox.Text);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            //Address
+            //Address  
 
             StudentInfoClass.Address = addresstxtbox.Text;
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-            //ContactNumber
-            StudentInfoClass.ContactNumber = Convert.ToInt64(contactNotxtbox.Text);
-
-
-
 
         }
     }
